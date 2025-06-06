@@ -21,3 +21,22 @@ To install Steghide using this script, follow these steps:
    cd steghide
    chmod +x install.sh
    bash install.sh
+
+
+## Usage
+
+**📥 Embedding (Hiding) Data**
+```bash
+steghide embed -cf cover.jpg -ef secret.txt
+```
+
+
+**📤 Extracting (Unhiding) Data**
+```bash
+steghide extract -sf cover.jpg
+```
+
+**🔍 Checking if a File Contains Hidden Data**
+```bash
+steghide info cover.jpg
+```
